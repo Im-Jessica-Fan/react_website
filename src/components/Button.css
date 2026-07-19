@@ -1,0 +1,71 @@
+:root {
+  --primary: #ffffff;
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--primary);
+  color: #ffffff;
+  border: 1px solid var(--primary);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn--outline {
+  position: relative;
+  z-index:1;
+  overflow:hidden;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid var(--primary);
+  transition: all 0.5s ease-out;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn--nav {
+  position: relative;
+  z-index:1;
+  overflow:hidden;
+  color: #ffffff;
+  border: 1px solid var(--primary);
+  transition: all 0.5s ease-out;
+  margin-top: 5px;
+  height: 70px;
+  width: 80vw;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn--nav:before, .btn--outline:before {
+    z-index:-1;
+    position:absolute;
+    left:0;
+    top:0;
+    content: url('../../public/images/img-4.jpg');
+    opacity:0.5;
+}
+
+.btn--transparent {
+  background-color: transparent;
+}
+
+.btn--medium {
+  padding: 8px 20px;
+  font-size: 1.2rem;
+}
+
+.btn--large {
+  padding: 12px 26px;
+  font-size: 1.2rem;
+}
+
+.btn--large:hover,
+.btn--medium:hover {
+  transition: all 0.25s ease-out;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
