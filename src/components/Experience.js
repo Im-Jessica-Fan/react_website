@@ -4,57 +4,87 @@ import '../App.css'
 
 function Experience() {
   return (
-    <section id='experience' className='experience-container'>
-      <div>
-        <h1>My Journey</h1>
-      </div>
-      <div>
-        <div>
-          <h2>Education</h2>
-          <div>
-              <p>Bachelor of Science</p>
-              <p>Majoring in Computer Science and Neuroscience</p>
-              <p>University of Otago</p>
-              <p>Dunedin, New Zealand</p>
-              <p>February 2023 - May 2026</p>
-              <p>Cumulative GPA: 7.9/9.0</p>
-              <ul>
-                <li>University of Otago New Frontiers Scholarship (2023)</li>
-                <li>Academic Excellence Honour Roll (2024)</li>
-                <li>Class Representative (2024)</li>
-              </ul>
+<section id="experience" className="experience-container">
+  <div className="experience-content">
+    <h1 className="experience-title">My Journey</h1>
+
+    <div className="timeline-wrapper">
+      <div className="timeline-column">
+        <h1>Education</h1>
+
+        <div className="timeline-item current">
+          <div className="timeline-content">
+            <img src="/images/otago.jpg" alt="University of Otago" className="corner-logo" />
+            <p className="date">Feb 2023 - May 2026</p>
+            <h3>Bachelor of Science</h3>
+            <p className='major'>Majoring in Computer Science and Neuroscience</p>
+            <p>University of Otago</p>
+            <p>Dunedin, New Zealand</p>
+            <ul>
+              <li>University of Otago New Frontiers Scholarship (2023)</li>
+              <li>Academic Excellence Honour Roll (2024)</li>
+              <li>Class Representative (2024)</li>
+            </ul>
           </div>
-          <div>
-            <p>Global Student Exchange Program</p>
+        </div>
+
+        <div className="timeline-item">
+          <div className="timeline-content">
+            <img src="/images/edinburgh.jpg" alt="University of Edinburgh" className="corner-logo" />
+            <p className="date">Jan 2026 - May 2026</p>
+            <h3>Global Student Exchange Program</h3>
             <p>University of Edinburgh</p>
-            <p>Edinburgh, Scotland</p>
-            <p>January 2026 - May 2026</p>
-          </div>
-          <div>
-            <p>Global Student Exchange Program</p>
-            <p>University of British Columbia</p>
-            <p>Vancouver, Canada</p>
-            <p>September 2025 - December 2025</p>
+            <p className='timeline-lastp'>Edinburgh, Scotland</p>
           </div>
         </div>
-        <div>
-          <h2>Experience</h2>
-          <div>
-            <p>Data Science Intern</p>
-            <p>Scentian Bio</p>
-            <p>Auckland, New Zealand</p>
-            <p>July 2025 - August 2025</p>
-          </div>
-          <div>
-            <p>Bioinformatics Intern</p>
-            <p>Scentian Bio</p>
-            <p>Auckland, New Zealand</p>
-            <p>November 2024 - August 2025</p>
+
+        <div className="timeline-item">
+          <div className="timeline-content">
+            <img src="/images/ubc.jpg" alt="University of British Columbia" className="corner-logo" />
+            <p className="date">Sep 2025 - Dec 2025</p>
+            <h3>Global Student Exchange Program</h3>
+            <p>University of British Columbia</p>
+            <p className='timeline-lastp'>Vancouver, Canada</p>
           </div>
         </div>
       </div>
-    </section>
-  )
+
+      <div className="timeline-column">
+        <h1>Experience</h1>
+
+        <div className="timeline-item current">
+          <div className="timeline-content">
+            <img src="/images/scentianbio.jpg" alt="Scentian Bio" className="corner-logo" />
+            <p className="date">Jul 2025 - Aug 2025</p>
+            <h3>Data Science Intern</h3>
+            <p>Scentian Bio</p>
+            <p className='timeline-lastp'>Auckland, New Zealand</p>
+          </div>
+        </div>
+
+        <div className="timeline-item">
+          <div className="timeline-content">
+            <img src="/images/scentianbio.jpg" alt="Scentian Bio" className="corner-logo" />
+            <p className="date">Nov 2024 - Feb 2025</p>
+            <h3>Bioinformatics Intern</h3>
+            <p>Scentian Bio</p>
+            <p className='timeline-lastp'>Auckland, New Zealand</p>
+          </div>
+        </div>
+
+        <div className="timeline-item">
+          <div className="timeline-content">
+            <img src="/images/otago.jpg" alt="University of Otago" className="corner-logo" />
+            <p className="date">2024</p>
+            <h3>Class Representative</h3>
+            <p>University of Otago</p>
+            <p className='timeline-lastp'>Dunedin, New Zealand</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  )
 }
 
 export default Experience

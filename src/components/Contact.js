@@ -1,12 +1,13 @@
 import React from 'react'
 import '../App.css'
-import './Contact.css'
+import ContactForm from './ContactForm'
+import './ContactForm.css'
 
 function Contact() {
   return (
     <section id='contact' className='contact-container'>
         <div>
-            <h1>Contact</h1>
+            <ContactForm />
         </div>
     </section>
   )

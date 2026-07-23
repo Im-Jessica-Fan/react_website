@@ -41,7 +41,7 @@ function Navbar() {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link className="nav-links" onClick={() => {
+                            <Link to='/' className="nav-links" onClick={() => {
                                 closeMobileMenu();
                                 setTimeout(() => {
                                     document.getElementById("hero")?.scrollIntoView();
@@ -51,7 +51,7 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className="nav-links" onClick={() => {
+                            <Link to='/#about' className="nav-links" onClick={() => {
                                 closeMobileMenu();
                                 setTimeout(() => {
                                     document.getElementById("about")?.scrollIntoView();
@@ -61,7 +61,7 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className="nav-links" onClick={() => {
+                            <Link to='/#experience' className="nav-links" onClick={() => {
                                 closeMobileMenu();
                                 setTimeout(() => {
                                     document.getElementById("experience")?.scrollIntoView();
@@ -91,10 +91,10 @@ function Navbar() {
                             </Link>
                         </li>
                         <li>
-                            {!button && <Button href='/cv.pdf' buttonStyle='btn--nav'>Resume</Button>}
+                            {!button && <Button href='/cv.pdf' buttonStyle='btn--navmenu'>Resume</Button>}
                         </li>
                     </ul>
-                    {button && <Button href='/cv.pdf' buttonStyle='btn--outline'>Resume</Button>}
+                    {button && <Button href='/cv.pdf' buttonStyle='btn--navbar'>Resume</Button>}
                 </div>
             </nav>
         </>

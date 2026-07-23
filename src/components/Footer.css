@@ -1,8 +1,15 @@
 .footer-container {
-  background-color: #00000022;
-  padding: 4rem 0 2rem 0;
+  padding: 1.3rem 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 1px 1px 5px;
+  background-image: url('../../public/images/img-7.jpg');
+  background-size: cover;
+  /* background-position: center; */
+}
+
+.footer-container > p {
+  font-size: 15px;
 }
