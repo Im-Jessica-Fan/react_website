@@ -1,9 +1,9 @@
 import React from 'react'
 import './Projects.css'
 import '../App.css'
-import { FaReact, FaPython } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
+import { SiPython, SiOpenjdk, SiJavascript, SiTypescript, SiReact, SiNodedotjs,SiPostgresql, SiMysql, SiPandas, SiPytorch, SiScikitlearn, SiNumpy, SiGit, SiGithub, SiGitlab, SiGooglecolab, SiJupyter, SiDocker, SiGradle} from "react-icons/si";
 
+import { FaCode } from "react-icons/fa";
 function Projects() {
 
   const projects = [
@@ -23,97 +23,33 @@ function Projects() {
     }
   ]
 
-  const skills = [
-    {
-      category: "Programming Languages",
-      items: [
-        {
-          name: "Python",
-          icon: null
-        },
-        {
-          name: "Java",
-          icon: null
-        },
-        {
-          name: "JavaScript",
-          icon: null
-        },
-        {
-          name: "TypeScript",
-          icon: null
-        },
-        {
-          name: "SQL",
-          icon: null
-        }
-      ]
-    },
-    {
-      category: "Backend",
-      items: [
-        {
-          name: "Python",
-          icon: FaPython
-        },
-        {
-          name: "Java",
-          icon: null
-        },
-        {
-          name: "Node.js",
-          icon: null
-        },
-        {
-          name: "Express",
-          icon: null
-        }
-      ]
-    },
-    {
-      category: "Database",
-      items: [
-        {
-          name: "Python",
-          icon: FaPython
-        },
-        {
-          name: "Java",
-          icon: null
-        },
-        {
-          name: "Node.js",
-          icon: null
-        },
-        {
-          name: "Express",
-          icon: null
-        }
-      ]
-    },
-    {
-      category: "Tools",
-      items: [
-        {
-          name: "Python",
-          icon: FaPython
-        },
-        {
-          name: "Java",
-          icon: null
-        },
-        {
-          name: "Node.js",
-          icon: null
-        },
-        {
-          name: "Express",
-          icon: null
-        }
-      ]
-    }
-  ];
-
+const skills = [
+  {
+    category: "All",
+    items: [
+      { name: "Python", icon: SiPython },
+      { name: "Java", icon: SiOpenjdk },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "JSON", icon: FaCode },
+      { name: "React", icon: SiReact },
+      { name: "Node.js", icon: SiNodedotjs },
+      { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "MySQL", icon: SiMysql },
+      { name: "Pandas", icon: SiPandas },
+      { name: "PyTorch", icon: SiPytorch },
+      { name: "Scikit-learn", icon: SiScikitlearn },
+      { name: "NumPy", icon: SiNumpy },
+      { name: "Git", icon: SiGit },
+      { name: "GitHub", icon: SiGithub },
+      { name: "GitLab", icon: SiGitlab },
+      { name: "Colab", icon: SiGooglecolab },
+      { name: "Jupyter", icon: SiJupyter },
+      { name: "Docker", icon: SiDocker },
+      { name: "Gradle", icon: SiGradle }
+    ]
+  }
+];
 
   return (
     <section id="projects" className="projects-container">
@@ -141,12 +77,12 @@ function Projects() {
         </div>
       </div>
 
-      {/* <div className='stack-content'>
+      <div className='stack-content'>
         <h1>My Stack</h1>
 
         {skills.map(section => (
           <div className="stack-row" key={section.category}>
-            <h2>{section.category}</h2>
+            {/* <h2>{section.category}</h2> */}
 
             <div className="skill-list">
             {section.items.map(skill => {
@@ -162,7 +98,7 @@ function Projects() {
             </div>
           </div>
         ))}
-      </div> */}
+      </div>
     </section>
   )
 }

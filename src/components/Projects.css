@@ -114,22 +114,21 @@
 }
 
 .stack-row {
-    display: grid;
-    grid-template-columns: 220px 1fr;
     gap: 30px;
-    align-items: start;
     margin-bottom: 50px;
 }
 
 .skill-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 18px;
 }
 
 .skill-pill {
-    padding: 12px 24px;
-    background: rgba(255,255,255,.06);
+    padding: 10px 20px;
+    background: rgba(104, 138, 164, 0.25);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
     border: 1px solid rgb(75, 55, 28);
     border-radius: 999px;
     backdrop-filter: blur(10px);
@@ -140,8 +139,7 @@
 }
 
 .skill-pill:hover{
-    transform: translateY(-1px);
-    background: rgba(255,255,255,.12);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    transform: translateY(-3px);
+    background: rgba(104, 138, 164, 0.25);
 }
 
