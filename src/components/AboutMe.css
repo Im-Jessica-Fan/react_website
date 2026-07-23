@@ -53,4 +53,8 @@
     .about-me-image {
         width: 250px;
     }
+
+    #about {
+        scroll-margin: 30px;
+    }
 }

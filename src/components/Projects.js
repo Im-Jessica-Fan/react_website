@@ -12,7 +12,7 @@ function Projects() {
       description:
         "A Non-Destructive Image Editor that creates a Graphical User Interface (GUI) that provides access to various image editing and processing operations.",
       tags: ["Java", "Git", "GitLab", "Gradle"],
-      github: "http://localhost:3000/git-private"    
+      github: "http://im-jessica-fan.github.io/git-private"    
     },
     {
       title: "Personal Portfolio Website",

@@ -101,12 +101,8 @@
 }
 
 .timeline-content {
-    /* background-image: url('../../public/images/img-6.jpg'); */
     background-color: rgba(255, 251, 242, 0.5);
     backdrop-filter: blur(10px);
-    background-position: center 10%;
-    position: relative;
-    overflow: hidden;
     padding-left: 28px;
     padding-top: 23px;
     padding-bottom: 23px;

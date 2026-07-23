@@ -65,7 +65,7 @@
   position: absolute;
   inset:0;
   z-index: -1;
-  background-image: url(../../public/images/img-5.jpg);
+  background-image: url('../../public/images/img-5.jpg');
   opacity: 0.75;
   background-size: cover;
 }
@@ -129,6 +129,7 @@
 
 .form-submit-result {
   padding-top: 10px;
+  text-align: center;
 }
 
 .form-submit-result > p {
