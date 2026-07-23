@@ -12,7 +12,7 @@ function Projects() {
       description:
         "A Non-Destructive Image Editor that creates a Graphical User Interface (GUI) that provides access to various image editing and processing operations.",
       tags: ["Java", "Git", "GitLab", "Gradle"],
-      github: "/git-private"    
+      github: null    
     },
     {
       title: "Personal Portfolio Website",
@@ -63,8 +63,11 @@ const skills = [
               <p>{project.description}</p>
               
               <div className="project-buttons">
-                <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-                {/* <a href={project.demo}>Demo ↗</a> */}
+                {project.github && (
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    GitHub ↗
+                  </a>
+                )}
               </div>
 
               <div className="project-tags">
