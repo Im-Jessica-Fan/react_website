@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     text-align: center;
-    padding: 130px 0;    
+    padding: 100px 0;    
 }
 
 .projects-container::before {
@@ -143,3 +143,6 @@
     background: rgba(104, 138, 164, 0.25);
 }
 
+.fa-arrow-up-right-from-square {
+    padding-left: 3px;
+}

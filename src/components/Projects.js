@@ -65,7 +65,7 @@ const skills = [
               <div className="project-buttons">
                 {project.github && (
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    GitHub ↗
+                    GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
                   </a>
                 )}
               </div>

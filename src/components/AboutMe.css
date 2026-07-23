@@ -58,3 +58,9 @@
         scroll-margin: 30px;
     }
 }
+
+@media screen and (max-width: 960px) {
+    #about {
+        scroll-margin: 0px;
+    }
+}
