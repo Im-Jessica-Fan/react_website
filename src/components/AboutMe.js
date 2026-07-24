@@ -13,7 +13,7 @@ function AboutMe() {
                     About Me
                 </h1>
                 <p>
-                    Hello! I'm Jessica, a Computer Science and Neuroscience graduate from the University of Otago with interests in full-stack development and data science. I am passionate about building technology that creates meaningful impacts on people's lives. I thrive on stepping out of my comfort zone, embracing new challenges, and continuously expanding my knowledge and skills.</p>
+                    Hello! I'm Jessica, a Computer Science and Neuroscience graduate with interests in full-stack development and data science. I am passionate about building technology that creates meaningful impacts on people's lives. I thrive on stepping out of my comfort zone, embracing new challenges, and continuously expanding my knowledge and skills.</p>
                 <p>
                     Beyond coding, I enjoy hiking, travelling, and immersing myself in new cultures. This led me to participate in Global Student Exchange Programs in both Canada and Scotland, where I embraced new environments, broadened my perspective, and challenged myself to grow personally and professionally.</p>
                 <div className='about-me-socials'>
